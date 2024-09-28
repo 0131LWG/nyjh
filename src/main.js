@@ -8,6 +8,14 @@ import store from "./store"
 
 // Vue.use(Vant);
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+
+import { Button, Select } from 'element-ui'
+Vue.component(Button.name, Button)
+Vue.component(Select.name, Select)
+
 import MetaInfo from "vue-meta-info"
 
 Vue.use(MetaInfo)
@@ -15,6 +23,7 @@ Vue.use(MetaInfo)
 Vue.config.productionTip = false
 
 new Vue({
+  el: '#app',
   router,
   store,
   render: (h) => h(App),

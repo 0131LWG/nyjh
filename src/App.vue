@@ -1,15 +1,61 @@
 <template>
   <div id="app">
+    <HeaderNav />
     <router-view/>
   </div>
 </template>
 
-<style lang="stylus">
+<script>
+import HeaderNav from "@/components/HeaderNav.vue"
+export default {
+  data: () => ({}),
+  components:{HeaderNav},
+  methods: {
+    goLink(path) {
+      this.$router.push({
+        path,
+      });
+    },
+  },
+};
+</script>
+
+<style lang="stylus" scoped>
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-  text-align center
   color #2c3e50
-  margin-top 60px
 </style>
+
+
+<style>
+@media (min-width: 800px) {
+    body::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    body::-webkit-scrollbar-button {
+        background-color: #222;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #222;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: #ccd933;
+    }
+
+    /* body::-webkit-scrollbar-corner {
+        background: #222;
+    } */
+
+    body::-webkit-scrollbar-resizer {
+        background: #222;
+    }
+}
+</style>
+
+
