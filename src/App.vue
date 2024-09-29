@@ -2,14 +2,16 @@
   <div id="app">
     <HeaderNav />
     <router-view/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import HeaderNav from "@/components/HeaderNav.vue"
+import Footer from "@/components/Footer.vue";
 export default {
   data: () => ({}),
-  components:{HeaderNav},
+  components:{HeaderNav,Footer},
   methods: {
     goLink(path) {
       this.$router.push({
@@ -26,6 +28,12 @@ export default {
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   color #2c3e50
+</style>
+<style>
+*{
+  padding: 0;
+  margin: 0;
+}
 </style>
 
 

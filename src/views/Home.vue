@@ -1,90 +1,80 @@
 <template>
   <div>
     <div class="home">
-      <!-- <h1>This is an home page</h1>
-    <van-button type="default" @click="goLink('/about')">about</van-button>
-    <van-button type="primary" @click="goLink('/back')">back</van-button>
-    <van-button type="info" @click="goLink('/front')">front</van-button> -->
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img
-              class="swiper-slide-img"
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-            />
+            <img class="swiper-slide-img"
+              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
           </div>
           <div class="swiper-slide">
-            <img
-              class="swiper-slide-img"
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-            />
+            <img class="swiper-slide-img"
+              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
           </div>
         </div>
       </div>
     </div>
     <div class="core">
-      核心领域
+      <div class="core-title">核心领域</div>
       <div class="clip">
         <div class="swiper2">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img
-                class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-              />
-              <div class="layer-mask"></div>
+              <img class="swiper-slide-img"
+                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+              <div @click="openLink('/core', 1)" class="layer-mask"></div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-              />
-              <div class="layer-mask"></div>
+              <img class="swiper-slide-img"
+                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+              <div @click="openLink('/core', 2)" class="layer-mask"></div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-              />
-              <div class="layer-mask"></div>
+              <img class="swiper-slide-img"
+                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+              <div @click="openLink('/core', 3)" class="layer-mask"></div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-              />
-              <div class="layer-mask"></div>
+              <img class="swiper-slide-img"
+                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+              <div @click="openLink('/core', 4)" class="layer-mask"></div>
             </div>
           </div>
-          <div
-            class="swiper-button-prev btnPrev"
-            @click="mySwiper.slidePrev()"
-          ></div>
-          <div
-            class="swiper-button-next btnNext"
-            @click="mySwiper.slideNext()"
-          ></div>
+          <div class="swiper-button-prev btnPrev" @click="mySwiper.slidePrev()"></div>
+          <div class="swiper-button-next btnNext" @click="mySwiper.slideNext()"></div>
         </div>
       </div>
     </div>
     <div class="innovate">
       <div class="innovate-title">研发与创新</div>
-      <div>
+      <div class="innovate-news">
         <img
-          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-        />
-        <div>123</div>
+          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+        <div>
+          <div class="innovate-news-box">
+            <img
+              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+            <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+            </div>
+          </div>
+          <div class="innovate-news-solid1"></div>
+          <div class="innovate-news-box">
+            <img
+              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+            <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+            </div>
+          </div>
+          <div class="innovate-news-solid2"></div>
+        </div>
       </div>
     </div>
-    <div class="case">行业案例</div>
-    <Footer />
+    <div class="case">
+      <div class="case-title">行业案例</div>
+    </div>
   </div>
 </template>
 
 <script>
-import Footer from "@/components/Footer.vue";
-import { Button } from "vant";
-
 import Swiper from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.css";
@@ -92,8 +82,7 @@ import "swiper/swiper-bundle.css";
 export default {
   name: "home",
   components: {
-    Footer,
-    vanButton: Button,
+
   },
   data: () => ({
     linkList: [
@@ -137,7 +126,7 @@ export default {
   }),
   mounted() {
     this.mySwiper = new Swiper(".swiper2", {
-      loop: true, // 循环模式选项
+      loop: true,
       speed: 1000,
       slidesPerView: 3,
       preventInteractionOnTransition: true,
@@ -151,11 +140,6 @@ export default {
         nextEl: ".swiper-button-next",
       },
     });
-
-    var mySwiper = new Swiper(".swiper", {
-      loop: true, // 循环模式选项
-      speed: 1000,
-    });
   },
   methods: {
     goLink(path) {
@@ -163,8 +147,18 @@ export default {
         path,
       });
     },
-  },
-};
+    openLink(path, id) {
+      const routeUrl = id ?
+        this.$router.resolve({
+          path,
+          query: { id }
+        }) : this.$router.resolve({
+          path
+        })
+      window.open(routeUrl.href, '_blank')
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -177,6 +171,7 @@ export default {
   opacity: 0.7;
   transition: opacity 0.5s ease;
   background-color: #010b61;
+  cursor: pointer;
 }
 
 .clip {
@@ -210,6 +205,7 @@ export default {
       background-color: transparent;
     }
   }
+
   .btnPrev,
   .btnNext {
     background-color: #00000088;
@@ -219,7 +215,8 @@ export default {
     border-radius: 50%;
   }
 
-  .btnNext:after,.btnPrev:after{
+  .btnNext:after,
+  .btnPrev:after {
     font-size: 24px;
   }
 
@@ -233,6 +230,7 @@ export default {
 
   .swiper-slide-active {
     transform: scale(1.15);
+
     .layer-mask {
       opacity: 0;
     }
@@ -240,7 +238,7 @@ export default {
 }
 
 .swiper {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   max-height: 1440px;
 
@@ -259,13 +257,21 @@ export default {
 .core {
   height: 50vh;
   max-height: 540px;
-  padding: 30px 15%;
+  padding: 30px 10% 40px 10%;
+}
+
+.core-title {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .innovate {
   height: 60vh;
   max-height: 604px;
-  padding: 30px 0;
+  padding: 30px 15% 30px 15%;
   background-image: url(../assets/home/innovate-bg.png);
   background-color: rgba(249, 249, 249, 1);
   background-repeat: no-repeat;
@@ -277,12 +283,64 @@ export default {
   font-size: 32px;
   color: #333;
   font-weight: bold;
+  padding-top: 20px;
   text-align: center;
 }
+
+.innovate-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  letter-spacing: 1px;
+  word-break: break-work;
+  line-height: 1.5;
+  color: #061538;
+  font-size: 14px;
+}
+
+.innovate-news img {
+  width: 400px;
+  height: 400px;
+  margin-right: 55px;
+}
+
+.innovate-news-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.innovate-news-box img {
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
+}
+
+.innovate-news-solid1 {
+  width: 100%;
+  height: 25px;
+  border-bottom: 1px dashed rgba(173, 173, 173, 1);
+  margin-bottom: 25px;
+}
+
+.innovate-news-solid2 {
+  width: 100%;
+  height: 25px;
+  border-bottom: 1px dashed rgba(236, 236, 236, 1);
+}
+
 
 .case {
   height: 50vh;
   max-height: 540px;
   padding: 30px 20%;
+}
+
+.case-title {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
 }
 </style>

@@ -4,7 +4,7 @@
             <div class="about-link">
                 <div v-for="item,index in linkList" :key="index">
                     <div class="about-link-title">{{ item.title }}</div>
-                    <div class="about-link-name" v-for="_item,_index in item.list" :key="_item">{{ _index }}</div>
+                    <div class="about-link-name" v-for="_item,_index in item.list" :key="_index">{{ _item.name }}</div>
                 </div>
                 <div class="about-link-imgs">
                     <div>
@@ -103,8 +103,8 @@ export default {
 
 .about {
     max-height: 540px;
-    padding: 30px 0;
-    max-width: 1240px;
+    padding: 20px 0 10px 0;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
