@@ -1,6 +1,6 @@
 <template>
     <div class="background">
-        <div class="about">
+        <!-- <div class="about">
             <div class="about-link">
                 <div v-for="item,index in linkList" :key="index">
                     <div class="about-link-title">{{ item.title }}</div>
@@ -40,6 +40,25 @@
                     <img
                         src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
                 </div>
+            </div>
+        </div> -->
+        <div class="about">
+            <div class="title">东莞市南粤净化科技有限公司</div>
+            <div class="flex">
+                <img src="../assets/home/location.png" />
+                <div>广东省东莞市麻涌镇新基北街9号101室</div>
+            </div>
+            <div class="flex">
+                <img src="../assets/home/tell.png" />
+                <div>0769-22427609</div>
+            </div>
+            <div class="flex">
+                <img src="../assets/home/phone.png" />
+                <div>13925787528</div>
+            </div>
+            <div class="flex">
+                <img src="../assets/home/news.png" />
+                <div>fy686@126.com</div>
             </div>
         </div>
     </div>
@@ -97,13 +116,35 @@ export default {
 </script>
   
 <style scoped>
+.title{
+    font-size: 26px;
+}
 .background{
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(../assets/home/footbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
 }
 
 .about {
     max-height: 540px;
-    padding: 20px 0 10px 0;
+    padding: 40px 0 10px 30px;
     max-width: 1040px;
     margin: 0 auto;
 }

@@ -6,7 +6,7 @@
       src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
     />
     <div class="nav">
-      <div class="nav-item" v-for="(item, index) in list" :key="index">
+      <div class="nav-item" v-for="(item, index) in list" :key="index" @click="goLink(item.link)">
         {{ item.label }}
         <div v-if="Array.isArray(item.children)" class="tab">
           <div class="tab-content">
@@ -35,38 +35,13 @@ export default {
       list: [
         {
           label: "首页",
-          link: "",
+          link: "/",
           children: null,
         },
         {
           label: "关于我们",
-          link: "",
-          children: [
-            {
-              label: "公司介绍",
-              link: "",
-            },
-            {
-              label: "品牌故事",
-              link: "",
-            },
-            {
-              label: "生产与质量",
-              link: "",
-            },
-            {
-              label: "企业视频",
-              link: "",
-            },
-            {
-              label: "全球分布",
-              link: "",
-            },
-            {
-              label: "研发与创新",
-              link: "",
-            },
-          ],
+          link: "/about",
+          children:null,
           img: "https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
         },
         {
@@ -80,36 +55,32 @@ export default {
           children: null,
         },
         {
-          label: "解决方案",
-          link: "",
-          children: null,
-        },
-        {
           label: "行业案例",
-          link: "",
+          link: "/case",
           children: null,
         },
         {
           label: "招贤纳士",
-          link: "",
-          children: [
-            {
-              label: "企业理念",
-              link: "",
-            },
-            {
-              label: "人才管理",
-              link: "",
-            },
-            {
-              label: "活动留影",
-              link: "",
-            },
-            {
-              label: "工作机会",
-              link: "",
-            },
-          ],
+          link: "/recruit",
+          children: null,
+          // children: [
+          //   {
+          //     label: "企业理念",
+          //     link: "",
+          //   },
+          //   {
+          //     label: "人才管理",
+          //     link: "",
+          //   },
+          //   {
+          //     label: "活动留影",
+          //     link: "",
+          //   },
+          //   {
+          //     label: "工作机会",
+          //     link: "",
+          //   },
+          // ],
           img: "https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
         },
         {
@@ -130,9 +101,11 @@ export default {
   },
   methods: {
     goLink(path) {
+      if(path){
       this.$router.push({
         path,
       });
+    }
     },
   },
 };
@@ -144,6 +117,7 @@ export default {
   flex: 1;
   justify-content: center;
   height: 100%;
+  font-family: "宋体";
 }
 
 .nav-item {
@@ -220,6 +194,12 @@ export default {
 .white {
   background-color: white;
   color: black;
+}
+
+@media screen and (max-width:900px) {
+  .header{
+    display:none;
+  }
 }
 </style>
   

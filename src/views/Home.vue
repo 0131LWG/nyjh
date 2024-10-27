@@ -3,10 +3,10 @@
     <div class="home">
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <img class="swiper-slide-img"
               src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
-          </div>
+          </div> -->
           <div class="swiper-slide">
             <img class="swiper-slide-img"
               src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="core">
+    <!-- <div class="core">
       <div class="core-title">核心领域</div>
       <div class="clip">
         <div class="swiper2">
@@ -44,7 +44,7 @@
           <div class="swiper-button-next btnNext" @click="mySwiper.slideNext()"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="innovate">
       <div class="innovate-title">研发与创新</div>
       <div class="innovate-news">
@@ -68,9 +68,20 @@
         </div>
       </div>
     </div>
+    <div class="serve">
+      <div class="serve-title">产品与服务</div>
+      <div class="serve-box">
+        <div class="serve-box-one" v-for="(item,index) in  [{},{},{}]" :key="index">
+          <img
+          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+          <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
+        </div>
+      </div>
+    </div>
     <div class="case">
       <div class="case-title">行业案例</div>
     </div>
+   
   </div>
 </template>
 
@@ -275,7 +286,7 @@ export default {
   background-image: url(../assets/home/innovate-bg.png);
   background-color: rgba(249, 249, 249, 1);
   background-repeat: no-repeat;
-  background-size: 40% 120%;
+  background-size: 750px 120%;
   background-position: 0 -120px;
 }
 
@@ -300,8 +311,8 @@ export default {
 }
 
 .innovate-news img {
-  width: 400px;
-  height: 400px;
+  width:70%;
+  height: 70%;
   margin-right: 55px;
 }
 
@@ -342,5 +353,77 @@ export default {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
+}
+.serve {
+  height: 50vh;
+  max-height: 540px;
+  padding: 30px 15%;
+  background-color: #efefef;
+}
+
+.serve-title {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0 50px 0;
+}
+
+.serve-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.serve-box-one {
+ background-color: #fff;
+ padding: 10px;
+ width: 30%;
+ font-size: 12px;
+ transition: 500ms;
+ color: #838792;
+}
+.serve-box-one:hover {
+ margin-top: -40px;
+ transition: 500ms;
+}
+.serve-box-one img{
+ width: 100%;
+ height: 260px;
+ object-fit: cover;
+}
+.serve-box-one div{
+ margin-top: 10px;
+ line-height: 1.5;
+}
+
+@media screen and (max-width:900px) {
+  .innovate-news{
+    display: block;
+  }
+  .innovate {
+  height:100%;
+  max-height: 100004px;
+}
+.innovate-news img {
+  width:100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.innovate-news-box img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.serve{
+  height: 100%;
+  max-height: 100004px;
+}
+.serve-box{
+display: block;
+}
+.serve-box-one{
+width: 100%;
+margin-top: 20px;
+}
 }
 </style>

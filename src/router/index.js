@@ -16,14 +16,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "core" */ '../views/Core.vue')
   },
   {
-    path: '/front',
-    name: 'front',
-    component: () => import(/* webpackChunkName: "front" */ '../views/Front.vue')
+    path: '/recruit',
+    name: 'recruit',
+    component: () => import(/* webpackChunkName: "recruit" */ '../views/Recruit.vue')
   },
   {
-    path: '/back',
-    name: 'back',
-    component: () => import(/* webpackChunkName: "back" */ '../views/Back.vue')
+    path: '/case',
+    name: 'case',
+    component: () => import(/* webpackChunkName: "front" */ '../views/Case.vue')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import(/* webpackChunkName: "back" */ '../views/About.vue')
   }
 ]
 
