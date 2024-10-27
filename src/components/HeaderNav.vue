@@ -105,7 +105,11 @@ export default {
       this.$router.push({
         path,
       });
+     
     }
+    else{
+        window.alert('暂未开放')
+      }
     },
   },
 };

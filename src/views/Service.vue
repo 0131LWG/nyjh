@@ -13,9 +13,38 @@
         </div>
       </div>
     </div>
-    <div class="info">
-      <div class="info-title">人才招聘</div>
-      <div id="allmap" style="width:80%;height: 500px;">123</div>
+    <div class="flex">
+      <div class="flex-news">
+        <div class="flex-news-one">
+          <img
+          style="width:37px;height:40px;margin-right:20px;margin-left:5px;"
+              src="../assets/home/tell1.png"
+            />
+          <div>
+            <div style="font-size:16px;color:#333;">合作热线：</div>
+            <div style="font-size:14px;color:#999;margin-top:10px;">0769-22427609</div>
+          </div>
+        </div>
+        <div class="flex-news-one" style="margin:30px 0;">
+          <img
+              src="../assets/home/phone1.png"
+            />
+          <div>
+            <div style="font-size:16px;color:#333;">招聘热线：</div>
+            <div style="font-size:14px;color:#999;margin-top:10px;">13925787528</div>
+          </div>
+        </div>
+        <div class="flex-news-one">
+          <img
+              src="../assets/home/location1.png"
+            />
+          <div>
+            <div style="font-size:16px;color:#333;">地址：</div>
+            <div style="font-size:14px;color:#999;margin-top:10px;">广东省东莞市麻涌镇新基北街9号101室</div>
+          </div>
+        </div>
+      </div>
+      <div id="allmap" >123</div>
     </div>
   </div>
 </template>
@@ -104,6 +133,9 @@ export default {
   margin: 20px 0;
   border-bottom: 2px solid #2648a3;
 }
+#allmap{
+  width:50%;height: 500px;
+}
 .info-box {
   background-color: #fff;
   padding: 10px;
@@ -141,6 +173,28 @@ export default {
   border-radius: 6px;
   text-align: center;
 }
+.flex{
+  padding: 30px 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-news{
+  width: 50%;
+  padding-left: 80px;
+}
+
+.flex-news-one{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-news-one img{
+ width: 50px;
+ height: 50px;
+ margin-right: 10px;
+}
 
 @media screen and (max-width: 900px) {
   .none {
@@ -149,6 +203,19 @@ export default {
   .info {
     padding: 30px 10px;
   }
+  .flex{
+    display: block;
+    padding: 30px 20px;
+  
+  }
+  #allmap{
+  width:100%;height: 500px;
+  margin-top: 40px;
+}
+.flex-news{
+  width: 100%;
+  padding-left: 0;
+}
 }
 </style>
   
