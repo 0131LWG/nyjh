@@ -85,7 +85,7 @@ export default {
         },
         {
           label: "服务网络",
-          link: "",
+          link: "/service",
           children: null,
         },
       ],

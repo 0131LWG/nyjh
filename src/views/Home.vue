@@ -8,8 +8,10 @@
               src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
           </div> -->
           <div class="swiper-slide">
-            <img class="swiper-slide-img"
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+            <img
+              class="swiper-slide-img"
+              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+            />
           </div>
         </div>
       </div>
@@ -49,19 +51,24 @@
       <div class="innovate-title">研发与创新</div>
       <div class="innovate-news">
         <img
-          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+        />
         <div>
           <div class="innovate-news-box">
             <img
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
-            <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+            />
+            <div>
+              文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
             </div>
           </div>
           <div class="innovate-news-solid1"></div>
           <div class="innovate-news-box">
             <img
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
-            <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+            />
+            <div>
+              文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
             </div>
           </div>
           <div class="innovate-news-solid2"></div>
@@ -71,17 +78,44 @@
     <div class="serve">
       <div class="serve-title">产品与服务</div>
       <div class="serve-box">
-        <div class="serve-box-one" v-for="(item,index) in  [{},{},{}]" :key="index">
+        <div
+          class="serve-box-one"
+          v-for="(item, index) in [{}, {}, {}]"
+          :key="index"
+        >
           <img
-          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
-          <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
+            src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+          />
+          <div>
+            文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+          </div>
         </div>
       </div>
     </div>
     <div class="case">
       <div class="case-title">行业案例</div>
+      <div class="clip">
+        <div class="swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="i in 10">
+              <img
+                class="swiper-slide-img"
+                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+              />
+              <div class="swiper-slide-text">文案文案文案文案</div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-prev btnPrev"
+            @click="slideClick(true)"
+          ></div>
+          <div
+            class="swiper-button-next btnNext"
+            @click="slideClick(false)"
+          ></div>
+        </div>
+      </div>
     </div>
-   
   </div>
 </template>
 
@@ -92,9 +126,7 @@ import "swiper/swiper-bundle.css";
 
 export default {
   name: "home",
-  components: {
-
-  },
+  components: {},
   data: () => ({
     linkList: [
       {
@@ -134,42 +166,72 @@ export default {
       },
     ],
     mySwiper: null,
+    interval: null,
+    under768: document.body.clientWidth < 768,
   }),
   mounted() {
+    // this.mySwiper = new Swiper(".swiper2", {
+    //   loop: true,
+    //   speed: 1000,
+    //   // width: 1080,
+    //   autoplay: true,
+    //   // slidesPerView: 3,
+    //   // 如果需要前进后退按钮
+    //   // navigation: {
+    //   //   prevEl: ".swiper-button-prev",
+    //   //   nextEl: ".swiper-button-next",
+    //   // },
+    // });
+    this.under768 = document.body.clientWidth < 768;
+
     this.mySwiper = new Swiper(".swiper2", {
-      loop: true,
-      speed: 1000,
-      slidesPerView: 3,
-      preventInteractionOnTransition: true,
-      centeredSlides: true,
-      slidePrevClass: "slidePrevClass",
-      slideNextClass: "slideNextClass",
-      slideVisibleClass: "slideVisibleClass",
-      // 如果需要前进后退按钮
-      navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
+      slidesPerView: this.under768 ? 2 : 3,
+      spaceBetween: this.under768 ? 15 : 30,
+      speed: 2000,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
+
+    this.interval = setInterval(() => {
+      this.mySwiper.slideNext();
+    }, 4000);
+  },
+  destroyed() {
+    clearInterval(this.interval);
   },
   methods: {
+    slideClick(isPre) {
+      if (isPre) {
+        this.mySwiper.slidePrev();
+      } else {
+        this.mySwiper.slideNext();
+      }
+
+      clearInterval(this.interval);
+      this.interval = setInterval(() => {
+        this.mySwiper.slideNext();
+      }, 4000);
+    },
     goLink(path) {
       this.$router.push({
         path,
       });
     },
     openLink(path, id) {
-      const routeUrl = id ?
-        this.$router.resolve({
-          path,
-          query: { id }
-        }) : this.$router.resolve({
-          path
-        })
-      window.open(routeUrl.href, '_blank')
-    }
-  }
-}
+      const routeUrl = id
+        ? this.$router.resolve({
+            path,
+            query: { id },
+          })
+        : this.$router.resolve({
+            path,
+          });
+      window.open(routeUrl.href, "_blank");
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -187,6 +249,7 @@ export default {
 
 .clip {
   max-width: 1080px;
+  padding: 30px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -195,56 +258,53 @@ export default {
 
 .swiper2 {
   position: relative;
-  width: 1680px;
+  width: 100%;
 
   .swiper-slide {
+    margin-right: 30px;
     user-select: none;
-    border-radius: 5px;
-    margin: 70px 0;
     overflow: hidden;
     transition: all 0.5s ease;
-    width: 900px;
-    height: 300px;
-    transform: scale(0.85);
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 
     .swiper-slide-img {
-      width: 100%;
-      height: 100%;
+      /* width: 100%; */
+      height: 276px;
       object-fit: cover;
-      border-radius: 5px;
       background-color: transparent;
     }
+
+    .swiper-slide-text {
+      background-color: rgb(241, 241, 241);
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+  .swiper-slide:hover {
+    margin-top: -10px;
   }
 
   .btnPrev,
   .btnNext {
-    background-color: #00000088;
-    height: 70px;
-    width: 70px;
-    color: #ffffff88;
-    border-radius: 50%;
+    height: 40px;
+    width: 30px;
+    color: black;
   }
 
   .btnNext:after,
   .btnPrev:after {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .btnNext {
-    right: 420px;
+    right: -30px;
   }
 
   .btnPrev {
-    left: 420px;
-  }
-
-  .swiper-slide-active {
-    transform: scale(1.15);
-
-    .layer-mask {
-      opacity: 0;
-    }
+    left: -30px;
   }
 }
 
@@ -266,7 +326,6 @@ export default {
 }
 
 .core {
-  height: 50vh;
   max-height: 540px;
   padding: 30px 10% 40px 10%;
 }
@@ -311,7 +370,7 @@ export default {
 }
 
 .innovate-news img {
-  width:70%;
+  width: 70%;
   height: 70%;
   margin-right: 55px;
 }
@@ -340,11 +399,8 @@ export default {
   border-bottom: 1px dashed rgba(236, 236, 236, 1);
 }
 
-
 .case {
-  height: 50vh;
-  max-height: 540px;
-  padding: 30px 20%;
+  padding: 30px 15%;
 }
 
 .case-title {
@@ -375,55 +431,97 @@ export default {
   align-items: center;
 }
 .serve-box-one {
- background-color: #fff;
- padding: 10px;
- width: 30%;
- font-size: 12px;
- transition: 500ms;
- color: #838792;
+  background-color: #fff;
+  padding: 10px;
+  width: 30%;
+  font-size: 12px;
+  transition: 500ms;
+  color: #838792;
 }
 .serve-box-one:hover {
- margin-top: -40px;
- transition: 500ms;
+  margin-top: -40px;
+  transition: 500ms;
 }
-.serve-box-one img{
- width: 100%;
- height: 260px;
- object-fit: cover;
+.serve-box-one img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
-.serve-box-one div{
- margin-top: 10px;
- line-height: 1.5;
+.serve-box-one div {
+  margin-top: 10px;
+  line-height: 1.5;
 }
 
-@media screen and (max-width:900px) {
-  .innovate-news{
+@media screen and (max-width: 768px) {
+  .case {
+    padding: 0;
+  }
+
+  .clip {
+    padding: 15px;
+  }
+  .swiper2 {
+    .btnPrev,
+    .btnNext {
+      height: 20px;
+      width: 15px;
+      color: black;
+    }
+
+    .swiper-slide {
+      .swiper-slide-img {
+        height: 140px;
+      }
+
+      .swiper-slide-text {
+        background-color: rgb(241, 241, 241);
+        text-align: center;
+        font-size: 12px;
+        padding: 6px;
+      }
+    }
+
+    .btnNext:after,
+    .btnPrev:after {
+      font-size: 20px;
+    }
+
+    .btnNext {
+      right: -15px;
+    }
+
+    .btnPrev {
+      left: -15px;
+    }
+  }
+
+  .innovate-news {
     display: block;
   }
   .innovate {
-  height:100%;
-  max-height: 100004px;
-}
-.innovate-news img {
-  width:100%;
-  height: 100%;
-  margin-bottom: 30px;
-}
-.innovate-news-box img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-.serve{
-  height: 100%;
-  max-height: 100004px;
-}
-.serve-box{
-display: block;
-}
-.serve-box-one{
-width: 100%;
-margin-top: 20px;
-}
+    height: 100%;
+    max-height: 100004px;
+  }
+  .innovate-news img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  .innovate-news-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .serve {
+    height: 100%;
+    max-height: 100004px;
+  }
+  .serve-box {
+    display: block;
+  }
+  .serve-box-one {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 </style>
