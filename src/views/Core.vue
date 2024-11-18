@@ -2,7 +2,7 @@
   <div v-if="tabIndex != 0">
     <div class="home">
       <img
-        src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+        src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
     </div>
     <div class="tab">
       <div v-for="item, index in tabList" :key="index" @click="goLink('/core?id=' + item.id)">{{ item.name }}</div>
@@ -14,12 +14,12 @@
         <div class="info-box-cards">
           <div class="info-box-card" v-for="item, index in [{}, {}, {}, {}]" :key="index">
             <img
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
             <div>文案文案文案文案文案</div>
           </div>
         </div>
         <img class="info-box-img"
-          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+          src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
       </div>
       <div class="info-box">
         <div class="info-box-title">文文案文案文案文案文案文案文案文案文案文案文案</div>

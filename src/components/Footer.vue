@@ -9,17 +9,17 @@
                 <div class="about-link-imgs">
                     <div>
                         <img
-                            src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                            src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                         <div>文案文案</div>
                     </div>
                     <div>
                         <img
-                            src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                            src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                         <div>文案文案</div>
                     </div>
                     <div>
                         <img
-                            src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                            src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                         <div>文案文案</div>
                     </div>
                 </div>
@@ -30,15 +30,15 @@
                 <div>文案文案文案</div>
                 <div class="about-address-imgs">
                     <img
-                        src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                        src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                     <img
-                        src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                        src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                     <img
-                        src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                        src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                     <img
-                        src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                        src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                     <img
-                        src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                        src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg">
                 </div>
             </div>
         </div> -->

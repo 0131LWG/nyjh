@@ -21,6 +21,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "recruit" */ '../views/Recruit.vue')
   },
   {
+    path: '/center',
+    name: 'center',
+    component: () => import(/* webpackChunkName: "center" */ '../views/Center.vue')
+  },
+  {
+    path: '/plan',
+    name: 'plan',
+    component: () => import(/* webpackChunkName: "plan" */ '../views/Plan.vue')
+  },
+  {
     path: '/case',
     name: 'case',
     component: () => import(/* webpackChunkName: "front" */ '../views/Case.vue')

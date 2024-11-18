@@ -5,12 +5,12 @@
         <div class="swiper-wrapper">
           <!-- <div class="swiper-slide">
             <img class="swiper-slide-img"
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
           </div> -->
           <div class="swiper-slide">
             <img
               class="swiper-slide-img"
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
             />
           </div>
         </div>
@@ -23,22 +23,22 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
               <div @click="openLink('/core', 1)" class="layer-mask"></div>
             </div>
             <div class="swiper-slide">
               <img class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
               <div @click="openLink('/core', 2)" class="layer-mask"></div>
             </div>
             <div class="swiper-slide">
               <img class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
               <div @click="openLink('/core', 3)" class="layer-mask"></div>
             </div>
             <div class="swiper-slide">
               <img class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
               <div @click="openLink('/core', 4)" class="layer-mask"></div>
             </div>
           </div>
@@ -51,12 +51,12 @@
       <div class="innovate-title">研发与创新</div>
       <div class="innovate-news">
         <img
-          src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+          src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
         />
         <div>
           <div class="innovate-news-box">
             <img
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
             />
             <div>
               文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
@@ -65,7 +65,7 @@
           <div class="innovate-news-solid1"></div>
           <div class="innovate-news-box">
             <img
-              src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
             />
             <div>
               文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
@@ -84,7 +84,7 @@
           :key="index"
         >
           <img
-            src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+            src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
           />
           <div>
             文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
@@ -100,7 +100,7 @@
             <div class="swiper-slide" v-for="i in 10">
               <img
                 class="swiper-slide-img"
-                src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
               />
               <div class="swiper-slide-text">文案文案文案文案</div>
             </div>
@@ -370,8 +370,8 @@ export default {
 }
 
 .innovate-news img {
-  width: 70%;
-  height: 70%;
+  width: 300px;
+  height: 300px;
   margin-right: 55px;
 }
 

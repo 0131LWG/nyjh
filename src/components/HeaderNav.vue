@@ -3,7 +3,7 @@
   <div class="header" :class="{ white: bgColor }">
     <img
       class="logo"
-      src="https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+      src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
     />
     <div class="nav">
       <div class="nav-item" v-for="(item, index) in list" :key="index" @click="goLink(item.link)">
@@ -42,16 +42,16 @@ export default {
           label: "关于我们",
           link: "/about",
           children:null,
-          img: "https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+          img: "https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg",
         },
         {
           label: "产品中心",
-          link: "",
+          link: "/center",
           children: null,
         },
         {
           label: "解决方案",
-          link: "",
+          link: "/plan",
           children: null,
         },
         {
@@ -81,7 +81,7 @@ export default {
           //     link: "",
           //   },
           // ],
-          img: "https://ts3.cn.mm.bing.net/th?id=OIP-C.5uMzGH7lZNGNa3IxHWE4zgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+          img: "https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg",
         },
         {
           label: "服务网络",
