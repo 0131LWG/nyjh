@@ -25,10 +25,11 @@
             <div class="clip">
                 <div class="swiper2">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" v-for="i in 9">
+                        <div class="swiper-slide" v-for="i in 9" @click="jump(i)">
                             <img class="swiper-slide-img"
-                                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
-                            <div class="swiper-slide-text">文案文案文案文案</div>
+                                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
+                                @click="jump(i)" />
+                            <div class="swiper-slide-text" @click="jump(i)">文案文案文案文案</div>
                         </div>
                     </div>
                     <div class="swiper-button-prev btnPrev" @click="slideClick(true)"></div>
@@ -78,7 +79,14 @@ export default {
             this.interval = setInterval(() => {
                 this.mySwiper.slideNext();
             }, 4000);
-        }
+        },
+        jump(i) {
+            const routeUrl = this.$router.resolve({
+                path: '/detail',
+                query: { id:i },
+            })
+            window.open(routeUrl.href);
+        },
     },
 };
 </script>
@@ -98,7 +106,6 @@ export default {
         flex-direction: column;
 
         .swiper-slide-img {
-            /* width: 100%; */
             height: 276px;
             object-fit: cover;
             background-color: transparent;
@@ -133,6 +140,23 @@ export default {
 
     .btnPrev {
         left: -30px;
+    }
+}
+
+.home {
+    height: 50vh;
+    max-height: 1440px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    max-height: 1440px;
+
+    .swiper-slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -229,7 +253,6 @@ export default {
             left: -15px;
         }
     }
-
 
     .content-flex img {
         width: 100%;

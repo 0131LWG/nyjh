@@ -33,17 +33,22 @@ const routes = [
   {
     path: '/case',
     name: 'case',
-    component: () => import(/* webpackChunkName: "front" */ '../views/Case.vue')
+    component: () => import(/* webpackChunkName: "case" */ '../views/Case.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import(/* webpackChunkName: "back" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/detail',
+    name: 'detail',
+    component: () => import(/* webpackChunkName: "detail" */ '../views/Detail.vue')
   },
   {
     path: '/service',
     name: 'service',
-    component: () => import(/* webpackChunkName: "back" */ '../views/Service.vue')
+    component: () => import(/* webpackChunkName: "service" */ '../views/Service.vue')
   }
 ]
 
