@@ -1,30 +1,40 @@
 <!-- 顶部导航 -->
 <template>
-  <div class="header" :class="{ white: bgColor }">
-    <img
-      class="logo"
-      src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
-    />
-    <div class="nav">
-      <div class="nav-item" v-for="(item, index) in list" :key="index" @click="goLink(item.link)">
-        {{ item.label }}
-        <div v-if="Array.isArray(item.children)" class="tab">
-          <div class="tab-content">
-            <div class="tab-content-list">
-              <div
-                v-for="(tab, indexT) in item.children"
-                :key="indexT"
-                class="tab-content-list-item"
-              >
-                {{ tab.label }}
+  <div>
+    <div class="header" :class="{ white: bgColor }">
+      <img class="logo" src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+      <div class="nav">
+        <div class="nav-item" v-for="(item, index) in list" :key="index" @click="goLink(item.link)">
+          {{ item.label }}
+          <div v-if="Array.isArray(item.children)" class="tab">
+            <div class="tab-content">
+              <div class="tab-content-list">
+                <div v-for="(tab, indexT) in item.children" :key="indexT" class="tab-content-list-item">
+                  {{ tab.label }}
+                </div>
               </div>
+              <img class="tab-content-img" :src="item.img" />
             </div>
-            <img class="tab-content-img" :src="item.img" />
+          </div>
+        </div>
+      </div>
+      <div class="logo"></div>
+    </div>
+    <div class="tabs">
+      <img class="tabs-logo" src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+      <img class="tabs-menu" @click="openPupop" src="../assets/home/menu.png" />
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close" @click="closePupop">&times;</span>
+        <div class="menu">
+          <div class="menu-item" v-for="item in list" :key="item" @click="goLink(item.link)">
+            {{ item.label }}
           </div>
         </div>
       </div>
     </div>
-    <div class="logo"></div>
   </div>
 </template>
 
@@ -41,7 +51,7 @@ export default {
         {
           label: "关于我们",
           link: "/about",
-          children:null,
+          children: null,
           img: "https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg",
         },
         {
@@ -101,21 +111,33 @@ export default {
   },
   methods: {
     goLink(path) {
-      if(path){
-      this.$router.push({
-        path,
-      });
-     
-    }
-    else{
+      this.closePupop()
+      if (path) {
+        this.$router.push({
+          path,
+        });
+      }
+      else {
         window.alert('暂未开放')
       }
     },
+    openPupop() {
+      const modal = document.getElementById('modal');
+      modal.style.display = 'block';
+    },
+    closePupop(){
+      const modal = document.getElementById('modal');
+      modal.style.display = 'none';
+    }
   },
 };
 </script>
   
 <style scoped>
+.tabs {
+  display: none;
+}
+
 .nav {
   display: flex;
   flex: 1;
@@ -200,9 +222,66 @@ export default {
   color: black;
 }
 
+.modal {
+  display: none;
+  /* 初始状态隐藏 */
+  position: fixed;
+  z-index: 199 !important;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100vw;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 @media screen and (max-width:900px) {
-  .header{
-    display:none;
+  .header {
+    display: none;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tabs-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tabs-menu {
+    width: 30px;
+    height: 30px;
+  }
+  .menu{
+    margin-top: 30px;
+  }
+  .menu-item{
+    margin-top: 20px;
+    cursor: pointer;
   }
 }
 </style>
