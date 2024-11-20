@@ -46,28 +46,28 @@ export default {
         {
           label: "首页",
           link: "/",
-          children: null,
+          children: null
         },
         {
           label: "关于我们",
           link: "/about",
           children: null,
-          img: "https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg",
+          img: "https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
         },
         {
           label: "产品中心",
           link: "/center",
-          children: null,
+          children: null
         },
         {
           label: "解决方案",
           link: "/plan",
-          children: null,
+          children: null
         },
         {
           label: "行业案例",
           link: "/case",
-          children: null,
+          children: null
         },
         {
           label: "招贤纳士",
@@ -91,48 +91,46 @@ export default {
           //     link: "",
           //   },
           // ],
-          img: "https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg",
+          img: "https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
         },
         {
           label: "服务网络",
           link: "/service",
-          children: null,
-        },
+          children: null
+        }
       ],
-      bgColor: true,
-    };
+      bgColor: true
+    }
   },
   mounted() {
     // 滚动变色
     window.onscroll = () => {
-      this.bgColor =
-        document.body.scrollTop > 50 || document.documentElement.scrollTop > 50;
-    };
+      this.bgColor = document.body.scrollTop > 50 || document.documentElement.scrollTop > 50
+    }
   },
   methods: {
     goLink(path) {
       this.closePupop()
       if (path) {
         this.$router.push({
-          path,
-        });
-      }
-      else {
-        window.alert('暂未开放')
+          path
+        })
+      } else {
+        window.alert("暂未开放")
       }
     },
     openPupop() {
-      const modal = document.getElementById('modal');
-      modal.style.display = 'block';
+      const modal = document.getElementById("modal")
+      modal.style.display = "block"
     },
-    closePupop(){
-      const modal = document.getElementById('modal');
-      modal.style.display = 'none';
+    closePupop() {
+      const modal = document.getElementById("modal")
+      modal.style.display = "none"
     }
-  },
-};
+  }
+}
 </script>
-  
+
 <style scoped>
 .tabs {
   display: none;
@@ -223,10 +221,12 @@ export default {
 }
 
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   display: none;
   /* 初始状态隐藏 */
-  position: fixed;
-  z-index: 199 !important;
   left: 0;
   top: 0;
   width: 100vw;
@@ -252,7 +252,7 @@ export default {
   cursor: pointer;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .header {
     display: none;
   }
@@ -276,13 +276,12 @@ export default {
     width: 30px;
     height: 30px;
   }
-  .menu{
+  .menu {
     margin-top: 30px;
   }
-  .menu-item{
+  .menu-item {
     margin-top: 20px;
     cursor: pointer;
   }
 }
 </style>
-  
