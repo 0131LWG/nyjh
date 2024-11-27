@@ -212,7 +212,7 @@ export default {
   align-items: center;
   color: white;
   transition: color, background-color 0.5s;
-  z-index: 999;
+  z-index: 99999 !important;
 }
 
 .white {
