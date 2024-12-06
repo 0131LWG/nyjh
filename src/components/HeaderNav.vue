@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="header" :class="{ white: bgColor }">
-      <img class="logo" src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+      <img class="logo" src="../assets/tab1/logo.png" />
       <div class="nav">
         <div class="nav-item" v-for="(item, index) in list" :key="index" @click="goLink(item.link)">
           {{ item.label }}
@@ -21,7 +21,7 @@
       <div class="logo"></div>
     </div>
     <div class="tabs">
-      <img class="tabs-logo" src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+      <img class="tabs-logo" src="../assets/tab1/logo.png" />
       <img class="tabs-menu" @click="openPupop" src="../assets/home/menu.png" />
     </div>
 

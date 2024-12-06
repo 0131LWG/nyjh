@@ -10,7 +10,7 @@
           <div class="swiper-slide">
             <img
               class="swiper-slide-img"
-              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
+              src="../assets/tab1/banner.png"
             />
           </div>
         </div>
@@ -51,12 +51,12 @@
       <div class="innovate-title">研发与创新</div>
       <div class="innovate-news">
         <img
-          src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
+          src="../assets/tab1/innovation3.jpg"
         />
         <div>
           <div class="innovate-news-box">
             <img
-              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
+            src="../assets/tab1/innovation1.png"
             />
             <div>
               文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
@@ -65,7 +65,7 @@
           <div class="innovate-news-solid1"></div>
           <div class="innovate-news-box">
             <img
-              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
+            src="../assets/tab1/innovation2.png"
             />
             <div>
               文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
@@ -80,11 +80,11 @@
       <div class="serve-box">
         <div
           class="serve-box-one"
-          v-for="(item, index) in [{}, {}, {}]"
+          v-for="(item, index) in serve"
           :key="index"
         >
           <img
-            src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
+            :src="item.img"
           />
           <div>
             文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
@@ -97,12 +97,12 @@
       <div class="clip">
         <div class="swiper2">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="i in 10">
+            <div class="swiper-slide"  v-for="(item , index) in cases"  :key="index">
               <img
                 class="swiper-slide-img"
-                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg"
+                :src="item.img"
               />
-              <div class="swiper-slide-text">文案文案文案文案</div>
+              <div class="swiper-slide-text">{{ item.title }}</div>
             </div>
           </div>
           <div
@@ -164,6 +164,51 @@ export default {
           },
         ],
       },
+    ],
+    serve:[
+      {
+        img:require('../assets/tab1/serve1.jpg')
+      },
+      {
+        img:require('../assets/tab1/serve2.png')
+      },
+      {
+        img:require('../assets/tab1/serve3.png')
+      },
+    ],
+    cases:[
+      {
+        img:require('../assets/tab1/case1.png'),
+        title:'伯恩光学'
+      },
+      {
+        img:require('../assets/tab1/case2.jpg'),
+        title:'东财科技'
+      },
+      {
+        img:require('../assets/tab1/case3.webp'),
+        title:'京东方'
+      },
+      {
+        img:require('../assets/tab1/case4.jpg'),
+        title:'可口可乐'
+      },
+      {
+        img:require('../assets/tab1/case5.jpg'),
+        title:'丽珠集团'
+      },
+      {
+        img:require('../assets/tab1/case6.jpeg'),
+        title:'生益电子'
+      },
+      {
+        img:require('../assets/tab1/case7.jpeg'),
+        title:'拓斯达'
+      },
+      {
+        img:require('../assets/tab1/case8.jpg'),
+        title:'小菘科技'
+      }
     ],
     mySwiper: null,
     interval: null,

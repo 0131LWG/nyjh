@@ -76,7 +76,7 @@ export default {
       script.type = "text/javascript";
       script.className = "loadmap"; // 给script一个类名
       script.src =
-        "https://api.map.baidu.com/getscript?v=3.0&ak=nSxiPohfziUaCuONe4ViUP2N";
+        "https://api.map.baidu.com/getscript?v=3.0&ak=8nwHTmadwOaIrIAiPoNrJG1wiH0ubCwn";
       // 此处需要注意：申请ak时，一定要应用类别一定要选浏览器端，不能选服务端，不然地图会报ak无效
       script.onload = () => {
         // 使用script.onload，待资源加载完成，再初始化地图
