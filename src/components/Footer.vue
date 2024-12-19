@@ -46,19 +46,19 @@
             <div class="title">东莞市南粤净化科技有限公司</div>
             <div class="flex">
                 <img src="../assets/home/location.png" />
-                <div>广东省东莞市麻涌镇新基北街9号101室</div>
-            </div>
-            <div class="flex">
-                <img src="../assets/home/tell.png" />
-                <div>0769-22427609</div>
+                <div>工厂地址：广东省东莞市麻涌镇新基北街9号</div>
             </div>
             <div class="flex">
                 <img src="../assets/home/phone.png" />
-                <div>13925787528</div>
+                <div>售前电话：13925787528&emsp;13416783698</div>
+            </div>
+            <div class="flex">
+                <img src="../assets/home/tell.png" />
+                <div>售后电话：15916750164</div>
             </div>
             <div class="flex">
                 <img src="../assets/home/news.png" />
-                <div>fy686@126.com</div>
+                <div>邮箱：fy686@126.com</div>
             </div>
         </div>
     </div>
