@@ -43,7 +43,7 @@ const routes = [
   {
     path: '/detail',
     name: 'detail',
-    component: () => import(/* webpackChunkName: "detail" */ '../views/Detail.vue')
+    component: () => import(/* webpackChunkName: "detail" */ '../views/Detail.vue'),
   },
   {
     path: '/service',
@@ -56,5 +56,10 @@ const router = new VueRouter({
   mode: 'history',
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  console.log('1111111');
+  next();
+});
 
 export default router

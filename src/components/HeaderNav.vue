@@ -13,7 +13,7 @@
                   {{ tab.label }}
                 </div>
               </div>
-              <img class="tab-content-img" :src="item.img" />
+              <!-- <img class="tab-content-img" :src="item.img" /> -->
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@
       <div class="modal-content">
         <span id="closeModalBtn" class="close" @click="closePupop">&times;</span>
         <div class="menu">
-          <div class="menu-item" v-for="item in list" :key="item" @click="goLink(item.link)">
+          <div class="menu-item" v-for="(item,index) in list" :key="index" @click="goLink(item.link)">
             {{ item.label }}
           </div>
         </div>

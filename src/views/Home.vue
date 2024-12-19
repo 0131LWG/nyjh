@@ -59,7 +59,7 @@
             src="../assets/tab1/innovation1.png"
             />
             <div>
-              文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+              南粤净化深耕空气洁净领域十余年，致力于实现空气洁净各类使用场景的链路闭环。为新材料膜切行业、光学光电、半导体、智能智造、新能源、医院医疗体系、食品饮料、汽车制造等行业提供全     方位洁净领域的完整解决方案。
             </div>
           </div>
           <div class="innovate-news-solid1"></div>
@@ -68,7 +68,7 @@
             src="../assets/tab1/innovation2.png"
             />
             <div>
-              文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+              对内通过多年研发积累，实现全产品对于各类使用场景的定向优化，研发出多套完备的解决方案；对外整合上游核心过滤材料，推动技术研发，实现产业降本提质。
             </div>
           </div>
           <div class="innovate-news-solid2"></div>
@@ -87,7 +87,7 @@
             :src="item.img"
           />
           <div>
-            文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+            {{ item.text }}
           </div>
         </div>
       </div>
@@ -167,13 +167,16 @@ export default {
     ],
     serve:[
       {
-        img:require('../assets/tab1/serve1.jpg')
+        img:require('../assets/tab1/serve1.jpg'),
+        text:'为客户提供全方位洁净领域的完整解决方案'
       },
       {
-        img:require('../assets/tab1/serve2.png')
+        img:require('../assets/tab1/serve2.png'),
+        text:'公司主要产品为风机过滤单元、初中效空气过滤器、高效空气过滤器、化学过滤器、洁净棚、风淋室等各类洁净设备'
       },
       {
-        img:require('../assets/tab1/serve3.png')
+        img:require('../assets/tab1/serve3.png'),
+        text:'应用领域主要为新材料膜切、光学光电、半导体、智能智造、新能源、医院医疗体系、食品饮料、汽车制造等行业'
       },
     ],
     cases:[
@@ -410,7 +413,7 @@ export default {
   word-break: break-work;
   line-height: 1.5;
   color: #061538;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .innovate-news img {
@@ -481,6 +484,7 @@ export default {
   font-size: 12px;
   transition: 500ms;
   color: #838792;
+  text-align: center;
 }
 .serve-box-one:hover {
   margin-top: -40px;
