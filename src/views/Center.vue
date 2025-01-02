@@ -25,7 +25,7 @@
           <div class="title">{{ item.title }}</div>
         </div>
         <div class="flex">
-          <div class="flex-content" v-for="content in item.list">
+          <div class="flex-content" v-for="(content,_index) in item.list" :key="_index" @click="checkDetail(index,_index)">
 
             <img :src="content.url" />
             <div></div>
@@ -140,7 +140,9 @@ export default {
 
   },
   methods: {
-
+    checkDetail(x,y){
+      this.$router.push({path:'/goods',query:{x,y}}).catch(err => { console.log(err) })
+    }
   },
 };
 </script>
