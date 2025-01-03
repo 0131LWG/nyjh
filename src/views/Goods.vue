@@ -14,7 +14,8 @@
         <div v-if="info" class="info">
             <div class="content1">
                 <div style="padding:10px;background-color: #2648A3;color: #fff;">产品分类</div>
-                <div v-for="(item, index) in list" :key="index" class="tabs">{{ item.title }}</div>
+                <div v-for="(item, index) in list" :key="index" class="tabs" @click="goLink('/center')">{{ item.title }}
+                </div>
                 <div style="padding:10px;background-color: #2648A3;color: #fff;">联系我们</div>
                 <div class="news">东莞市南粤净化科技有限公司</div>
                 <div class="news">工厂地址:广东省东莞市麻涌镇新基北街9号</div>
@@ -27,9 +28,9 @@
                     <div>{{ list[info.x].title }}</div>
                     <div>
                         <span>您的当前位置：</span>
-                        <span style="cursor:pointer">首页</span>
+                        <span style="cursor:pointer" @click="goLink('/')">首页</span>
                         <span style="padding:4px 20px 0 20px">/</span>
-                        <span style="cursor:pointer">产品中心</span>
+                        <span style="cursor:pointer" @click="goLink('/center')">产品中心</span>
                         <span style="padding:4px 20px 0 20px">/</span>
                         <span style="cursor:pointer">{{ list[info.x].list[info.y].name }}</span>
                     </div>
@@ -39,13 +40,23 @@
                     <div class="betweens">
                         <img :src="list[info.x].list[info.y].url" />
                         <div style="margin:30px 20px;">
-                            <div style="border-bottom:1px dotted #777;padding-bottom: 10px;">所属分类：{{ list[info.x].list[info.y].name }}</div>
-                            <div class="button">立即询价</div>
+                            <div style="border-bottom:1px dotted #777;padding-bottom: 10px;">所属分类：{{
+                                list[info.x].list[info.y].name }}</div>
+                            <div class="button" @click="goLink('/service')">立即询价</div>
                         </div>
                     </div>
                 </div>
                 <div class="title" style="text-align:left;padding:10px 0 10px 0;">详细介绍</div>
-                <div style="padding:10px 0;font-size:14px;">123</div>
+                <div style="padding:10px 0;font-size:14px;">
+                    文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+                </div>
+                <div style="border-top:1px solid #ccc;padding: 10px 0;font-size:14px;" v-if="info.y == 0">上一篇：无</div>
+                <div style="border-top:1px solid #ccc;padding: 10px 0;font-size:14px;cursor: pointer;" v-else
+                    @click="change('reduce')">上一篇：{{ list[info.x].list[Number(info.y) - 1].name }}</div>
+                <div style="border-top:1px solid #ccc;padding: 10px 0;font-size:14px;cursor: pointer;"
+                    v-if="info.y < list[info.x].list.length - 1" @click="change('add')">下一篇：{{
+                        list[info.x].list[Number(info.y) + 1].name }}</div>
+                <div style="border-top:1px solid #ccc;padding: 10px 0;font-size:14px;" v-else>下一篇：无</div>
             </div>
         </div>
     </div>
@@ -153,6 +164,19 @@ export default {
         this.info = this.$route.query
     },
     methods: {
+        change(type) {
+            if (type == 'add') {
+                this.$router.push({ path: '/goods', query: { x: this.info.x, y: Number(this.info.y) + 1 } }).catch(err => { console.log(err) })
+                this.info = this.$route.query
+            }
+            else {
+                this.$router.push({ path: '/goods', query: { x: this.info.x, y: Number(this.info.y) - 1 } }).catch(err => { console.log(err) })
+                this.info = this.$route.query
+            }
+        },
+        goLink(path) {
+            this.$router.push(path)
+        },
     },
 }
 </script>
@@ -184,7 +208,8 @@ export default {
     background-color: #2648A3;
     color: #fff;
 }
-.button{
+
+.button {
     background-color: #2648A3;
     margin-top: 15px;
     color: #fff;
@@ -472,6 +497,11 @@ export default {
     .info {
         padding: 0 10px;
         display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .content {
@@ -505,6 +535,10 @@ export default {
 
     .list {
         display: none;
+    }
+    .between{
+        display: block;
+        line-height: 1.5;
     }
 }</style>
     
