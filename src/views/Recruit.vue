@@ -5,16 +5,16 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img class="swiper-slide-img"
-                src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+              src="../assets/tab1/banner.png" />
             </div>
           </div>
         </div>
       </div>
-      <div class="text-container">
+      <!-- <div class="text-container">
       <div class="textBox">
         <span>文案文案文案文案文文案文案文案文案文案文</span>
       </div>
-    </div>
+    </div> -->
       <div class="info">
         <div class="info-title" style="margin-top:0">人才招聘</div>
         <div class="info-box">
@@ -144,7 +144,7 @@ export default {
   }
 }
   .home {
-    height: 50vh;
+    height: 70vh;
     max-height: 1440px;
   }
   .swiper {
@@ -155,7 +155,6 @@ export default {
     .swiper-slide-img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
     }
   }
   .info{

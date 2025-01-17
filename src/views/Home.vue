@@ -320,7 +320,6 @@ export default {
     .swiper-slide-img {
       /* width: 100%; */
       height: 276px;
-      object-fit: cover;
       background-color: transparent;
     }
 
@@ -458,7 +457,7 @@ export default {
   padding-top: 20px;
 }
 .serve {
-  height: 50vh;
+  height: 70vh;
   max-height: 540px;
   padding: 30px 15%;
   background-color: #efefef;

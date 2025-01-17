@@ -9,16 +9,16 @@
           </div> -->
           <div class="swiper-slide">
             <img class="swiper-slide-img"
-              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+            src="../assets/tab1/banner.png" />
           </div>
         </div>
       </div>
     </div>
-    <div class="text-container">
+    <!-- <div class="text-container">
       <div class="textBox">
         <span>文案文案文案文案文文案文案文案文案文案文</span>
       </div>
-    </div>
+    </div> -->
     <div class="introduce">
       <div class="introduce-title">公司介绍</div>
       <div class="introduce-text">东莞市南粤净化科技有限公司位于东莞市水乡片区麻涌镇。背靠黄浦江，南接长安虎门。自2010年成立，公司经营者秉承质量为本、服务至上、不忘初心、向内自省，向外求新的理念。致力于空气洁净领域的产品研发、生产、销售、安装和检测。主要产品有初、中、高效空气过滤器、耐高温过滤器、洁净单元FFU、净化工作台、传递窗、高效排风箱、不锈钢制品等净化设备、净化工程的设计与安装。公司在2006年通过ISO9001和ISO14001认证。拥有最先进的净化产品生产设备及洁净车间生产线。所有出厂高效均通过自检。为新材料膜切行业、光学光电、半导体、智能智造、新能源、医院医疗体系、食品饮料、汽车制造等行业提供全方位洁净领域的完整解决方案。</div>
@@ -130,7 +130,7 @@ export default {
   }
 }
 .home {
-  height: 50vh;
+  height: 70vh;
   max-height: 1440px;
 }
 .swiper {
@@ -141,7 +141,6 @@ export default {
   .swiper-slide-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 }
 .introduce {

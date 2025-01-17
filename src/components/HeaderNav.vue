@@ -60,7 +60,7 @@ export default {
           children: null
         },
         {
-          label: "解决方案",
+          label: "过滤器资讯",
           link: "/plan",
           children: null
         },

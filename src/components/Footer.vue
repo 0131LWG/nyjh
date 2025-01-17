@@ -95,10 +95,10 @@ export default {
                 ]
             },
             {
-                title: '解决方案',
+                title: '过滤器资讯',
                 list: [
                     {
-                        name: '解决方案',
+                        name: '过滤器资讯',
                         url: ''
                     }
                 ]

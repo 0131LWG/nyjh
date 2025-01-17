@@ -2,7 +2,7 @@
   <div v-if="tabIndex != 0">
     <div class="home">
       <img
-        src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+      src="../assets/tab1/banner.png" />
     </div>
     <div class="tab">
       <div v-for="item, index in tabList" :key="index" @click="goLink('/core?id=' + item.id)">{{ item.name }}</div>

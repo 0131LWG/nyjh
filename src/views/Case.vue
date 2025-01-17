@@ -9,16 +9,16 @@
           </div> -->
           <div class="swiper-slide">
             <img class="swiper-slide-img"
-              src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" />
+            src="../assets/tab1/banner.png" />
           </div>
         </div>
       </div>
     </div>
-    <div class="text-container">
+    <!-- <div class="text-container">
       <div class="textBox">
         <span>文案文案文案文案文文案文案文案文案文案文</span>
       </div>
-    </div>
+    </div> -->
     <div class="case">
       <div class="case-one" v-for="(item,index) in cases" :key="index">
         <img 
@@ -217,7 +217,7 @@ export default {
   }
 }
 .home {
-  height: 50vh;
+  height: 70vh;
   max-height: 1440px;
 }
 .swiper {
@@ -228,7 +228,6 @@ export default {
   .swiper-slide-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 }
 .case{
