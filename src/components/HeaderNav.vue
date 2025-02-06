@@ -61,7 +61,7 @@ export default {
         },
         {
           label: "过滤器资讯",
-          link: "/plan",
+          link: "/plan?id=1",
           children: null
         },
         {
