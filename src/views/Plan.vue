@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div style="padding:10px 0;font-size:14px;"  v-if="tabIndex==1">
-                   <div v-for="(item,index) in list1" :key="index" style="border-bottom:1px solid #ccc;padding:10px 0;">
+                   <div v-for="(item,index) in list1" @click="check(item.title)" :key="index" style="border-bottom:1px solid #ccc;padding:10px 0;cursor:pointer;">
                         <div class="down" style="margin-top:0">
                             <div class="title" style="text-align:left;padding:2px 0 2px 0;font-size:16px;">{{ item.title }}</div>
                             <div style="color:#aaa;">{{ item.des }}</div>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div style="padding:10px 0;font-size:14px;"  v-if="tabIndex==2">
-                   <div v-for="(item,index) in list2" :key="index" style="border-bottom:1px solid #ccc;padding:10px 0;">
+                   <div v-for="(item,index) in list2" @click="check(item.title)" :key="index" style="border-bottom:1px solid #ccc;padding:10px 0;cursor:pointer;">
                         <div class="down" style="margin-top:0">
                             <div class="title" style="text-align:left;padding:2px 0 2px 0;font-size:16px;">{{ item.title }}</div>
                             <div style="color:#aaa;">{{ item.des }}</div>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div style="padding:10px 0;font-size:14px;"  v-if="tabIndex==3">
-                   <div v-for="(item,index) in list3" :key="index" style="border-bottom:1px solid #ccc;padding:10px 0;">
+                   <div v-for="(item,index) in list3" @click="check(item.title)" :key="index" style="border-bottom:1px solid #ccc;padding:10px 0;cursor:pointer;">
                         <div class="down" style="margin-top:0">
                             <div class="title" style="text-align:left;padding:2px 0 2px 0;font-size:16px;">{{ item.title }}</div>
                             <div style="color:#aaa;">{{ item.des }}</div>
@@ -372,6 +372,9 @@ export default {
                     this.goLink('/plan?id=' + Number(Number(this.tabIndex)+1))
                 }
             }
+        },
+        check(title){
+            this.goLink('/news?title=' + title)
         }
     },
 };
