@@ -91,6 +91,7 @@ export default {
       }
       document.body.appendChild(script);
     },
+    
   },
 };
 </script>
