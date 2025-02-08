@@ -39,7 +39,8 @@
           </div>
         </div>
       </div>
-      <div id="allmap">123</div>
+      <!-- <div id="allmap">123</div> -->
+      <img @click="baidu" style="width:750px;margin-left:10px;cursor:pointer;" src="../assets/home/dt.png" alt="">
     </div>
   </div>
 </template>
@@ -91,7 +92,10 @@ export default {
       }
       document.body.appendChild(script);
     },
-    
+    baidu(){
+      // location.href='http://api.map.baidu.com/marker?location=23.071364,113.602145&title=东莞市南粤净化科技有限公司&content=广东省东莞市麻涌镇新基北街9号101室&output=html'
+      window.open('http://api.map.baidu.com/marker?location=23.071364,113.602145&title=东莞市南粤净化科技有限公司&content=广东省东莞市麻涌镇新基北街9号101室&output=html')
+    }
   },
 };
 </script>
