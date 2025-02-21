@@ -196,7 +196,7 @@ export default {
 }
 
 .logo {
-  height: 60px;
+  height: 80px;
   width: 210px;
   object-fit: contain;
 }
@@ -210,7 +210,7 @@ export default {
   height: 90px;
   background-color: transparent;
   align-items: center;
-  color: white;
+  color: #000;
   transition: color, background-color 0.5s;
   z-index: 99999 !important;
 }
@@ -268,13 +268,13 @@ export default {
   }
 
   .tabs-logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   .tabs-menu {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
   .menu {
     margin-top: 30px;

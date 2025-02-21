@@ -52,14 +52,14 @@
           </div>
         </div>
         <div class="info-title">员工福利</div>
-        <div class="infos-box">
+        <!-- <div class="infos-box">
           <div class="infos-box-one" v-for="(item,index) in [{},{},{},{},{},{}]" :key="index">
           <div style="overflow: hidden;margin:0px;padding:0;">
             <img
             src="https://cbu01.alicdn.com/img/ibank/2018/215/366/9282663512_92214457.jpg" /></div>
             <div>文案文案文案文案</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   
